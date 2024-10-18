@@ -1,0 +1,258 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #FFCCE5;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #FF6F91;
+}
+
+/* Hero section styles */
+.hero {
+    background: linear-gradient(135deg, #FFD1DC, #A3D4F7);
+    text-align: center;
+    padding: 100px 20px;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Featured products styles */
+#featured-products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#featured-products h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* Allows products to wrap on smaller screens */
+}
+
+/* Product card styles */
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.product-card p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+.buy-btn,
+.shop-now-btn {
+    background-color: #FFC1E3;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover,
+.shop-now-btn:hover {
+    background-color: #FF6F91;
+}
+
+/* Footer styles */
+footer {
+    background-color: #FFCCE5;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    /* Could be more or less, depending on screen size */
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Styles for the quantity input */
+input[type="number"] {
+    width: 100%;
+    /* Full width of the modal */
+    padding: 10px;
+    /* Padding for better touch targets */
+    margin: 10px 0;
+    /* Spacing around the input */
+    border: 1px solid #ccc;
+    /* Light gray border */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 16px;
+    /* Font size for readability */
+}
+
+/* Input focus styles */
+input[type="number"]:focus {
+    border-color: #FF6F91;
+    /* Change border color on focus */
+    outline: none;
+    /* Remove default outline */
+    box-shadow: 0 0 5px rgba(255, 111, 145, 0.5);
+    /* Add a subtle shadow */
+}
+
+/* Styles for the confirm button */
+.confirm-btn {
+    background-color: #FF6F91;
+    /* Background color */
+    color: white;
+    /* Text color */
+    padding: 10px 20px;
+    /* Padding for size */
+    border: none;
+    /* Remove default border */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 16px;
+    /* Font size */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+}
+
+/* Confirm button hover effects */
+.confirm-btn:hover {
+    background-color: #FF4081;
+    /* Darker shade on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 90%;
+        /* Full width on smaller screens */
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+}

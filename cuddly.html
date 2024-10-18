@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cuddly Creations - Home</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="cuddly.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#featured-products">Products</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="logo">
+                <img src="Cuddly Creations.jpg" alt="Cuddly Creations Logo">
+            </div>
+            <h1>Welcome to Cuddly Creations</h1>
+            <p>Pink or Blue, something for every hue!</p>
+        </div>
+    </section>
+
+    <section id="featured-products">
+        <h2>Baby Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="Product.jpg" alt="Soft Toy - Product Name 1">
+                <h3>Soft Toy - Product Name 1</h3>
+                <p>$19.99</p>
+                <a href="#" class="buy-btn" onclick="openModal('Soft Toy1')">Buy Now</a>
+            </div>
+            <div class="product-card">
+                <img src="Product2.jpg" alt="Soft Toy - Product Name 2">
+                <h3>Soft Toy - Product Name 2</h3>
+                <p>$29.99</p>
+                <a href="#" class="buy-btn" onclick="openModal('Soft Toy2')">Buy Now</a>
+            </div>
+            <!-- Add more product cards as needed -->
+        </div>
+    </section>
+
+    <footer>
+        <section class="social-media">
+            <a href="https://instagram.com" target="_blank">📷</a>
+            <a href="https://wa.me/254723424851" target="_blank">💬</a>
+            <a href="https://mail.google.com/mail/u/2/#inbox">✉️</a>
+        </section>
+    </footer>
+
+    <!-- Modal for order quantity -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Order Quantity</h2>
+            <input type="number" id="quantityInput" value="1" min="1" required>
+            <button class="confirm-btn" onclick="confirmOrder()">Confirm</button>
+        </div>
+    </div>
+
+    <script src="cuddly.js"></script>
+</body>
+
+</html>
