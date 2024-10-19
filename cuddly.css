@@ -232,6 +232,70 @@ input[type="number"]:focus {
     /* Darker shade on hover */
 }
 
+/* Add spacing between the categories and the product grids */
+#featured-products h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #060606;
+    text-align: center;
+    padding-top: 50px;
+    /* Add space before the category header */
+}
+
+#featured-products h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    /* Add space between the category title and the product grid */
+    color: #FF6F91;
+    text-align: center;
+}
+
+/* Add spacing between product cards */
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    /* Adds space between product cards horizontally */
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    /* Add space after each product grid */
+}
+
+/* Product card styles */
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    /* Add vertical space between rows of product cards */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 90%;
+        /* Full width on smaller screens */
+    }
+
+    #featured-products h2 {
+        font-size: 28px;
+        padding-top: 30px;
+        /* Adjust spacing for smaller screens */
+    }
+
+    #featured-products h3 {
+        font-size: 24px;
+    }
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .nav-links {
