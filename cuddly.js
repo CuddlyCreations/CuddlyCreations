@@ -14,7 +14,7 @@ function confirmOrder() {
     const quantity = document.getElementById("quantityInput").value;
     const productName = modal.getAttribute("data-product-name");
     const whatsappNumber = "254723424851";
-    const message = `<p><b>This text is bold</b></p>Hello, I want to order ${quantity} of these ${productName} from you which I saw in your website.`;
+    const message = `Hello, I want to order ${quantity} of these ${productName} from you which I saw in your website.`;
 
     // Redirect to WhatsApp
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
