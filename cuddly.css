@@ -269,12 +269,19 @@ input[type="number"]:focus {
     /* Add vertical space between rows of product cards */
 }
 
+.sold {
+    background-color: red;
+    border-radius: 20px;
+    padding: 10px;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .nav-links{
+    .nav-links {
         font-size: 16px;
         font-weight: 300;
     }
+
     .product-grid {
         flex-direction: column;
         align-items: center;
@@ -298,10 +305,11 @@ input[type="number"]:focus {
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    .nav-links{
+    .nav-links {
         font-size: 16px;
         font-weight: 300;
-     }
+    }
+
     .product-grid {
         flex-direction: column;
         align-items: center;
